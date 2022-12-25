@@ -75,7 +75,7 @@ app.get("/",(req, res)=>{
 app.use(authRoute);
 app.use(adminRoute);
 app.use(medicRoute);
-
+//port
 app.listen(3000, ()=>{
     console.log("server is running on port 3000!");
 });
