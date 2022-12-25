@@ -61,6 +61,8 @@ app.use((req, res, next)=>{
    
     next();
 });
+
+//routes
 const authRoute = require('./routes/auth');
 const adminRoute = require('./routes/admin');
 const medicRoute = require('./routes/medic');
@@ -69,6 +71,7 @@ app.get("/",(req, res)=>{
     res.render("home");
 })
 
+//middleware
 app.use(authRoute);
 app.use(adminRoute);
 app.use(medicRoute);
