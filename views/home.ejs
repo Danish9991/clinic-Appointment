@@ -1,0 +1,154 @@
+<%- include("partials/header") %>
+
+<%- include("partials/container") %>
+<!--SECTION1-->
+<section class="section1">
+<table>
+<tr>
+<td>
+
+</td>
+<td>
+    <div style="margin-top: 30px; text-align: center; align-items: center;"> 
+<em>ABOUT US</em>
+<h1>Get better care for your health</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
+</td>
+</tr>
+</table>
+</section>
+
+
+
+
+
+
+<!--SECTION2-->
+<section class="section2">
+<div class="cards">
+<div class="card">
+<i class="fa fa-medkit"></i>
+<h1>Qualified Doctors</h1>
+<p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+</div>
+<div class="card">
+<i class="fa fa-certificate"></i>
+<h1>Certified Services</h1>
+<p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+</div>
+<div class="card">
+<i class="fa fa-stethoscope"></i>
+<h1>Advanced Equipment</h1>
+<p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+</div>
+<div class="card">
+<i class="fa fa-heartbeat"></i>
+<h1>Emergency Service</h1>
+<p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<!--SECTION3-->
+<%- include("partials/services") %>
+
+
+
+
+
+
+
+<!--SECTION4-->
+<section class="section4">
+<div class="title_header">
+<h1>Our Gallery Portfolio</h1>
+</div>
+<div class="row">
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+</div>
+<div class="column">
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+</div>
+</div>
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+<div class="mySlides">
+<div class="numbertext">1 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">5 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">6 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">7 / 7</div>
+<img src="https://i.ibb.co/Sft7gKp/bg2.webp" class="animate" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+</div>
+</section>
+
+
+<%- include("partials/footer") %>
+
+
+
+

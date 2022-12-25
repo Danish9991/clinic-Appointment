@@ -1,0 +1,40 @@
+<%-include("../adminPartials/header")%>
+
+<h1>All Appointments</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>sno</th>
+            <th>Doctor</th>
+       
+            <th>Date</th>
+            <th>specialization</th>
+            <th>Contact</th>
+            <th>User Email</th>
+        </thead>
+        <tbody>
+          <%  appointment.forEach((appoint)=>{ %>
+                <tr>
+                    <th><%=x%></th>
+                    <td><%=appoint.doctorId.name%></td>
+                    <td><%=appoint.time%></td>
+                    <td><%=appoint.doctorId.specialization%></td>
+                    <td><%=appoint.contact%></td>
+                    <td><%=appoint.userId.email%></td>
+                </tr>
+                <%x++;%>
+           <% }) %>
+           
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+<%-include("../adminPartials/footer")%>

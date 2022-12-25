@@ -1,0 +1,26 @@
+
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+    <%	doctors.forEach((doctor)=>{ %>
+            <div class="col col-lg-3" >
+                <div class="card" style="width: 18rem; margin-top: 20px;">
+                    <img class="card-img-top" src="/uploads/<%=doctor.image%>" alt="Card image cap">
+                    <div class="card-body">
+                       <h5 class="card-title"><%=doctor.specialization%></h5>
+                       <p class="card-text"><%=doctor.description%></p>
+                       <h3><%=doctor.name%></h3>
+                      <a href="/doctorDetails/<%=doctor._id%>" class="btn btn-primary">More Info!</a>
+                    </div>
+                </div>
+            </div>
+     <%	}) %>
+    </div>
+</div>
+
+
+
+
+
+<%- include("../partials/footer") %>

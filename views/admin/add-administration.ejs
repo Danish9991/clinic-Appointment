@@ -1,0 +1,27 @@
+<%-include("../adminPartials/header")%>
+<section class="section1">
+    <table>
+    <tr>
+    <td>
+    <div class="form">
+   
+        <h1>Register for administrator</h1>
+        <form action="/add-administration" method="post" role="form" enctype="multipart/form-data">
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="name" name="name" id="email" placeholder="name" maxlength="100" value="<%=doctor.name%>" required />
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="email" name="email" id="email" placeholder="Email" maxlength="100" value="<%=doctor.email%>" required />
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="file" name="file" placeholder="pro pic" value="<%=doctor.name%>">
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="text" name="specialization" id="fname" placeholder="Specialization" value="<%=doctor.specialization%>" maxlength="60" required />
+        <textarea class="form-control" style="line-height: 30px; margin: 5px;" name="description" id="" cols="45" placeholder="Description" rows="4"><%=doctor.description%></textarea>
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="password" name="password" id="fname" placeholder="password" maxlength="60"  required />
+        <input class="form-control" style="line-height: 30px; margin: 5px;" type="hidden" name="hid" value="<%=doctor._id%>">
+        <button class='btn btn-success' type="submit" class="btn2">ADD Administrator</button>
+    </form>
+        </div>
+     </td>
+   </tr>
+
+  </table>
+</section>
+<!--FOOTER-->
+<!-- <img src="https://i.ibb.co/ZLHbWJz/footer.png" class="footer_image"> -->
+<%-include("../adminPartials/footer")%>

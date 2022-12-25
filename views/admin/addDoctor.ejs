@@ -1,0 +1,21 @@
+<%-include("../partials/header")%>
+<section class="section1">
+    <table>
+    <tr>
+    <td>
+    <div class="form" style="margin-top: 100px; width: 400px;">
+        <h4>REQUEST FOR YOUR</h4>
+        <h1>Register Doctor Form</h1>
+        <form action="/addDoctor" method="post">
+        <input type="email" name="email" id="email" placeholder="Email" maxlength="100" required />
+        <input type="password" name="password" id="fname" placeholder="password" maxlength="60" required />
+        
+        <button type="submit" class="btn2">Login</button>
+    </form>
+        </div>
+     </td>
+   </tr>
+
+  </table>
+</section>
+<%- include("../partials/footer") %>

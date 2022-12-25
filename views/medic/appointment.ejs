@@ -1,0 +1,29 @@
+<%-include("../partials/header")%>
+<section class="section1">
+    <table>
+    <tr>
+    <td>
+    <div class="form" style="margin-top: 100px; width: 400px;">
+   
+        <h1>Book Appointment</h1>
+        <form action="/appointment" method="post" >
+            <select name="doctor" required>
+                <option value="">Select Doctor</option>
+              <%  doctors.forEach((doc)=>{ %>
+                    <option value="<%=doc.name%>"><%=doc.name%></option>
+             <%   }) %>
+
+
+            </select>
+        <input type="text" name="contact" id="email" placeholder="contact" maxlength="100" value="" required />
+        <input type="datetime-local" name="time"  placeholder="" required />
+        <button type="submit" class="btn2">Book Appointment</button>
+    </form>
+        </div>
+     </td>
+   </tr>
+
+  </table>
+</section>
+
+<%-include("../partials/footer")%>

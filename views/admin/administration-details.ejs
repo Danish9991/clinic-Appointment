@@ -1,0 +1,20 @@
+<%-include("../adminPartials/header")%>
+    
+<div class="container" >
+    <div class="card mb-3" style="height: 50%;width: 60%;">
+        <img class="card-img-top" src="/uploads/<%=doctor.image%>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%=doctor.name%></h5>
+          <h5 class="card-title"><%=doctor.specialization%></h5>
+          <p class="card-text"><%=doctor.description%></p>
+
+          <a href="/editDoctor/<%=doctor._id%>" class="btn btn-sm btn-warning">edit</a>
+          <a href="/deleteDoctor/<%=doctor._id%>" class="btn btn-sm btn-danger">delete</a>
+        
+        </div>
+      </div>
+</div>
+
+
+<%-include("../adminPartials/footer")%>
+

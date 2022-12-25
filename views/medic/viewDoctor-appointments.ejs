@@ -1,0 +1,35 @@
+<%-include("../partials/header")%>
+
+<h1>Your Appointments</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>sno</th>
+            <th>User Email</th>
+            <th>Date</th>
+            <th>Contact</th>
+        </thead>
+        <tbody>
+          <%  appointment.forEach((appoint)=>{ %>
+                <tr>
+                    <th><%=x%></th>
+                    <td><%=appoint.userId.email%></td>
+                    <td><%=appoint.time%></td>
+                    <td><%=appoint.contact%></td>
+                </tr>
+                <%x++;%>
+           <% }) %>
+           
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+<%-include("../partials/header")%>

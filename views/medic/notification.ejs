@@ -1,0 +1,29 @@
+<%-include("../partials/header")%>
+<link rel="stylesheet/less" type="text/css" href="styles.less" />
+<script src="less.js" type="text/javascript"></script>
+
+<div class="row notification-container">
+    <h2 class="text-center">My Notifications</h2>
+ <% notifications.forEach((notify)=>{ %>
+    <div class="card notification-card notification-invitation">
+        <div class="card-body">
+          <table>
+            <tr>
+              <td style="width:70%"><div class="card-title"><%=notify.description.slice(0,100)%>...</div></td>
+              <td style="width:30%">
+                <a href="/notification/<%=notify._id%>" class="btn btn-primary">View</a>
+    
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+ <% }) %>
+    
+    
+  
+  </div>
+
+
+
+<%-include("../partials/footer")%>
